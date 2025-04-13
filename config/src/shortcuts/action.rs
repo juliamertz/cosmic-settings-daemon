@@ -74,8 +74,11 @@ pub enum Action {
     /// Change focus to the previous workspace
     PreviousWorkspace,
 
-    /// Resize the active window in a given direction
+    /// Active resize mode for the active window in a given direction
     Resizing(ResizeDirection),
+
+    /// Attempt to resize the window in a given direction
+    Resize(Direction),
 
     /// Move a window to the last workspace
     SendToLastWorkspace,
